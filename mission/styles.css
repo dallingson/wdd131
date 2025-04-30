@@ -64,3 +64,17 @@ footer .logo {
     display: block;
     margin: 1rem auto;
 }
+
+body.light {
+    background-color: white;
+    color: black;
+}
+
+body.dark {
+    background-color: #333;
+    color: white;
+
+}
+body.dark header.title h2 {
+    color: #92d3ff;
+}
