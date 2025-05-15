@@ -65,29 +65,40 @@ main {
   margin: 1rem;
 }
 
+.modal-content {
+  position: relative;
+  width: 90%;
+  max-height: 90vw;
+  max-width: 80vh;
+  margin: 20vh auto;
+}
+
 #viewer {
   width: 100%;
   height: 100%;
+  max-width: none;
+  max-height: none;
   background-color: rgba(0, 0, 0, 0.6);
-  border: none;
-  padding: 0;
   position: fixed;
-  top: 0;
-  left: 0;
   z-index: 10;
+  overflow: hidden;
+  border: none;
 }
 
 #viewer img {
   display: block;
-  margin: 20vh auto;   /* Centers horizontally and pushes it down vertically */
-  width: 90%;
-  max-height: 100%;
+  width: 100%;
+  height: auto;
+  max-height: 90vw;
+  max-width: 80vh;
+  margin: 20vh auto;
+  box-shadow: none;
 }
 
 #viewer .close-viewer {
   position: absolute;
-  top: 20vh;
-  right: 5%;
+  top: 0.5rem;
+  right: 0.5rem;
   background: white;
   border: none;
   font-size: 1.5rem;
@@ -100,6 +111,10 @@ main {
   display: grid;
   gap: 1rem;
   grid-template-columns: 1fr;
+}
+
+.gallery img {
+  cursor: pointer;
 }
 
 img {
