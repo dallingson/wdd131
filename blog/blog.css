@@ -12,6 +12,12 @@ body {
   background-color: #fff;
 }
 
+main {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 20px;
+}
+
 /* === Header === */
 header {
   text-align: center;
@@ -79,6 +85,16 @@ nav a:hover {
   font-size: 0.9em;
   color: var(--dark);
   border-right: 2px solid #ddd;
+  text-align: right;
+  padding-left: 10px;
+  padding-right: 10px;
+  line-height: 0.8;
+  margin-bottom: 30px;
+}
+
+
+.left-info p:first-child {
+  font-size: 1.1em;
 }
 
 /* === Review Content === */
@@ -91,16 +107,19 @@ nav a:hover {
 .review-content img {
   max-width: 200px;
   height: auto;
-  float: left;
-  margin-right: 15px;
   align-self: center;
+  margin: 0 auto;
+  display: block;
+  float: none; /* remove float */
 }
+
 
 .review-content h2 {
   font-family: 'Lora', serif;
-  margin-top: 0;
+  margin-top: 0.1em; /* adjust as needed */
   color: var(--red);
 }
+
 
 .review-content p {
   margin-top: 10px;
