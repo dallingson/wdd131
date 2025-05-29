@@ -95,8 +95,6 @@ nav a:hover {
 
 .left-info p:first-child {
   font-size: 1.1em;
-  white-space: nowrap;
-  text-align: right;
 }
 
 /* === Review Content === */
