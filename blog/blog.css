@@ -74,7 +74,7 @@ nav a:hover {
 /* === Book Review Grid === */
 .book-review {
   display: grid;
-  grid-template-columns: 150px 1fr;
+  grid-template-columns: 200px 1fr;
   gap: 20px;
   margin-bottom: 30px;
   padding-bottom: 20px;
@@ -95,6 +95,8 @@ nav a:hover {
 
 .left-info p:first-child {
   font-size: 1.1em;
+  white-space: nowrap;
+  text-align: right;
 }
 
 /* === Review Content === */
@@ -116,7 +118,7 @@ nav a:hover {
 
 .review-content h2 {
   font-family: 'Lora', serif;
-  margin-top: 0.1em; /* adjust as needed */
+  padding-top: 2px;
   color: var(--red);
 }
 

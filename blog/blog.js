@@ -51,13 +51,13 @@ document.addEventListener("DOMContentLoaded", () => {
     const content = `
       <aside class="left-info">
         <p style="font-size: 1.1em;">${article.date}</p>
-        <p>${article.age}</p>
+        <p>${article.ages}</p>
         <p>${article.genre}</p>
-        <p>${article.rating}</p>
+        <p>${article.stars}</p>
       </aside>
       <div class="review-content">
         <h2 style="margin-top: 0;">${article.title}</h2>
-        <img src="${article.image}" alt="Book cover for ${article.title}">
+        <img src="${article.imgSrc}" alt="Book cover for ${article.imgAlt}">
         <p>${article.description}</p>
       </div>
     `;
