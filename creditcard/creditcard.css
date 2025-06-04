@@ -15,10 +15,11 @@ form#credit-card {
     position: relative;
     margin: auto;
     width: 500px;
-    height: 290px;
+    height: 350px;
 }
 
-#card-front, #card-back {
+#card-front,
+#card-back {
     position: absolute;
     width: 390px;
     height: 250px;
@@ -27,33 +28,34 @@ form#credit-card {
     box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.1);
 }
 
-/* Back card, slightly shifted behind */
+/* BACK CARD */
 #card-back {
     z-index: 1;
     top: 40px;
     left: 110px;
-    grid-template-columns: 2 / 3;
-    grid-template-rows: 2 / 4;
+    display: grid;
+    grid-template-columns: 3fr 1fr;
+    grid-template-rows: auto 1fr 1fr;
+    align-items: center;
+    justify-content: right;
 }
-/* CARD FRONT */
+
+/* FRONT CARD */
 #card-front {
     z-index: 10;
     display: grid;
     grid-template-columns: 2fr 1fr;
     grid-template-rows: 1fr 1fr 1fr;
-
 }
 
-
-/* Top row: total and image */
+/* TOP ROW: TOTAL + IMAGE */
 #image-container {
     display: flex;
     grid-column: 1 / 3;
     justify-content: space-between;
     align-items: center;
-    padding: 20px 20px 0 20px ;
+    padding: 20px 20px 0 20px;
 }
-
 
 #amount {
     font-weight: bold;
@@ -69,77 +71,55 @@ form#credit-card {
 #number-container {
     grid-column: 1 / 3;
     grid-row: 2;
-    padding: 0 20px 0 20px;
+    padding: 0 20px;
 }
 
+/* SHARED INPUT STYLING */
+input[type="text"],
+#holder-container input,
+#exp-inputs input {
+    padding: 8px 10px;
+    font-size: 16px;
+    border: 1px solid black;
+    border-radius: 3px;
+    box-sizing: border-box;
+    width: 100%;
+    margin-top: 5px;
+}
+
+/* LABELS */
 label {
     font-weight: bold;
     font-size: 14px;
     letter-spacing: 1px;
 }
 
-input[type="text"] {
-    width: 100%;
-    padding: 10px;
-    margin-top: 5px;
-    font-size: 16px;
-    border: 1px solid black;
-    border-radius: 3px;
-    box-sizing: border-box;
-}
-
-/* CARD HOLDER + EXPIRATION */
-    #holder-container {
+/* HOLDER + EXPIRATION */
+#holder-container {
     grid-column: 1;
     grid-row: 3;
     margin-right: 10px;
     padding-left: 20px;
-    
-}
-
-#holder-container input {
-    width: 100%;
-    padding: 8px 10px;
-    font-size: 16px;
-    border: 1px solid black;
-    border-radius: 3px;
-    box-sizing: border-box;
-    /* align-self: start; */
 }
 
 #expiration-container {
+    grid-column: 2;
+    grid-row: 3;
+    padding-right: 20px;
     align-self: start;
 }
 
 #exp-inputs {
+    display: flex;
     gap: 10px;
 }
 
-#exp-inputs input {
-    width: 50px;
-    padding: 8px 10px;
-    font-size: 16px;
-    border: 1px solid black;
-    border-radius: 3px;
-    box-sizing: border-box;
-}
-
-
-/* CARD BACK */
-#card-back {
-    display: grid;
-    grid-template-columns: 3fr 1fr;
-    grid-template-rows: auto 1fr 1fr;
-    align-items: center;
-    justify-content: right;
-}
-
+/* CARD BACK SPECIFIC */
 #card-stripe {
     width: 100%;
     height: 50px;
     background-color: rgb(56, 55, 55);
     margin-top: 20px;
-    right: 0;
     grid-row: 1;
     grid-column: 1 / 3;
 }
@@ -148,26 +128,26 @@ input[type="text"] {
     grid-row: 3;
     grid-column: 2;
     margin-top: 60px;
-    width: 70px;
     margin-right: 20px;
     margin-bottom: 30px;
-    z-index: 10; /* bring forward */
+    width: 70px;
+    z-index: 10;
 }
 
+/* SUBMIT BUTTON */
 button[type="submit"] {
-    margin-top: 350px;
-    position: relative;
     grid-column: 3;
     grid-row: 4;
-    z-index: 10;
     padding: 10px 20px;
     font-size: 16px;
     background-color: white;
     border: 2px solid black;
     border-radius: 5px;
     cursor: pointer;
+    align-self: end;
+    justify-self: center;
 }
 
 button[type="submit"]:hover {
-  background-color: #f0f0f0;    
+    background-color: #f0f0f0;
 }
