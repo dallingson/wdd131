@@ -50,7 +50,7 @@ function participantTemplate(count) {
 // Function to create success message template
 function successTemplate(info) {
   return `
-    Thank you ${info.name} for registering. You have registered ${info.participants} participants and owe ${info.fees} in Fees.
+    Thank you ${info.name} for registering. You have registered ${info.participants} participants and owe $${info.fees} in Fees.
   `;
 }
 
