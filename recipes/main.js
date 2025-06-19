@@ -26,10 +26,15 @@ function generateStarRating(rating) {
 
 // Create recipe card HTML
 function createRecipeCard(recipe) {
+    const tagsHTML = recipe.tags ? recipe.tags.map(tag => `<span class="recipe-tag">${tag}</span>`).join('') : '';
+    
     return `
         <article class="recipe-card">
             <img src="${recipe.image}" alt="${recipe.name}" class="recipe-image">
             <div class="recipe-content">
+                <div class="recipe-tags">
+                    ${tagsHTML}
+                </div>
                 <h2>${recipe.name}</h2>
                 <p class="recipe-description">${recipe.description}</p>
                 

@@ -5,6 +5,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Recipe Book - Delicious Recipes for Everyone</title>
     <meta name="description" content="Discover amazing recipes with step-by-step instructions, ratings, and cooking tips. Perfect for home cooks of all skill levels.">
+    <meta name="author" content="Dallin Georgeson">
+    <link rel="icon" type="image/png" href="images/recipe-book.png">
     
     <!-- Social Media Meta Tags -->
     <meta property="og:title" content="Recipe Book - Delicious Recipes for Everyone">
@@ -29,7 +31,9 @@
             <form class="search-form" role="search">
                 <label for="recipe-search" class="sr-only">Search recipes</label>
                 <input type="search" id="recipe-search" placeholder="Search recipes..." aria-label="Search recipes">
-                <button type="submit" aria-label="Search">🔍</button>
+                <button type="submit" aria-label="Search">
+                    <img src="images/search.svg" alt="">
+                </button>
             </form>
         </section>
 
@@ -37,6 +41,9 @@
             <article class="recipe-card">
                 <img src="images/apple-crisp.jpg" alt="Apple Crisp dessert" class="recipe-image">
                 <div class="recipe-content">
+                    <div class="recipe-tags">
+                        <span class="recipe-tag">dessert</span>
+                    </div>
                     <h2>Apple Crisp</h2>
                     <p class="recipe-description">A classic dessert with tender apples and a crispy oat topping. Perfect for fall gatherings and family dinners.</p>
                     
@@ -74,6 +81,6 @@
         </p>
     </footer>
 
-    <script src="main.js"></script>
+    <script type="module" src="main.js"></script>
 </body>
 </html>

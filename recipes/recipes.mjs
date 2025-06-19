@@ -7,6 +7,7 @@ const recipes = [
         rating: 4,
         prepTime: "45 min",
         difficulty: "Easy",
+        tags: ["dessert"],
         ingredients: [
             "6 cups sliced apples",
             "1 cup rolled oats",
@@ -32,6 +33,7 @@ const recipes = [
         rating: 5,
         prepTime: "25 min",
         difficulty: "Easy",
+        tags: ["dessert", "cookies"],
         ingredients: [
             "2 1/4 cups flour",
             "1 tsp baking soda",
@@ -52,33 +54,6 @@ const recipes = [
             "Bake 9-11 minutes"
         ]
     },
-    {
-        id: 3,
-        name: "Chicken Stir Fry",
-        image: "images/chicken-stir-fry.jpg",
-        description: "Quick and healthy chicken stir fry with fresh vegetables and a savory sauce. Ready in under 30 minutes.",
-        rating: 4,
-        prepTime: "25 min",
-        difficulty: "Medium",
-        ingredients: [
-            "1 lb chicken breast",
-            "2 cups mixed vegetables",
-            "2 tbsp soy sauce",
-            "1 tbsp cornstarch",
-            "2 cloves garlic",
-            "1 tbsp ginger",
-            "2 tbsp oil"
-        ],
-        instructions: [
-            "Cut chicken into strips",
-            "Heat oil in wok or large pan",
-            "Cook chicken until done",
-            "Add vegetables and stir fry",
-            "Mix sauce ingredients",
-            "Add sauce and cook until thickened",
-            "Serve over rice"
-        ]
-    }
 ];
 
 export default recipes;
