@@ -63,8 +63,8 @@ function filterRecipes(query) {
     return recipes.filter(recipe => 
         recipe.name.toLowerCase().includes(query) ||
         recipe.description.toLowerCase().includes(query) ||
-        recipe.tags.find(tag => tag.toLowerCase().includes(query)) ||
-        recipe.ingredients.find(ingredient => ingredient.toLowerCase().includes(query))
+        (recipe.tags && recipe.tags.find(tag => tag.toLowerCase().includes(query))) ||
+        (recipe.ingredients && recipe.ingredients.find(ingredient => ingredient.toLowerCase().includes(query)))
     ).sort((a, b) => a.name.localeCompare(b.name));
 }
 
@@ -135,15 +135,6 @@ function createRecipeCard(recipe) {
 // Display recipes
 function displayRecipes(recipesToShow = recipes) {
     recipeSection.innerHTML = recipesToShow.map(recipe => createRecipeCard(recipe)).join('');
-}
-
-// Search functionality
-function searchRecipes(searchTerm) {
-    const filteredRecipes = recipes.filter(recipe => 
-        recipe.name.toLowerCase().includes(searchTerm.toLowerCase()) ||
-        recipe.description.toLowerCase().includes(searchTerm.toLowerCase())
-    );
-    displayRecipes(filteredRecipes);
 }
 
 // Event listeners
