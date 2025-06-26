@@ -64,7 +64,7 @@ function filterRecipes(query) {
         recipe.name.toLowerCase().includes(query) ||
         recipe.description.toLowerCase().includes(query) ||
         (recipe.tags && recipe.tags.find(tag => tag.toLowerCase().includes(query))) ||
-        (recipe.ingredients && recipe.ingredients.find(ingredient => ingredient.toLowerCase().includes(query)))
+        (recipe.recipeIngredient && recipe.recipeIngredient.find(ingredient => ingredient.toLowerCase().includes(query)))
     ).sort((a, b) => a.name.localeCompare(b.name));
 }
 
