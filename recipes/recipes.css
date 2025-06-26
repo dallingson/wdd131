@@ -23,6 +23,9 @@ body {
     line-height: 1.6;
     color: var(--text-dark);
     background-color: #f8f9fa;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
 }
 
 img {
@@ -77,6 +80,7 @@ main {
     padding: 2rem 1rem;
     max-width: 1200px;
     margin: 0 auto;
+    flex: 1;
 }
 
 /* Search Section */
