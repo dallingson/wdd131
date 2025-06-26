@@ -287,12 +287,14 @@ footer {
     
     .recipe-section {
         display: grid;
-        grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
+        grid-template-columns: repeat(auto-fit, minmax(400px, 400px));
         gap: 2rem;
+        justify-content: center;
     }
     
     .recipe-card {
         flex-direction: column;
+        max-width: 400px;
     }
     
     .recipe-image {

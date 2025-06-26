@@ -48,6 +48,9 @@ function recipeTemplate(recipe) {
 			<div class="rating-container">
 				${ratingTemplate(recipe.rating)}
 			</div>
+			<div class="recipe-stats">
+				<span class="prep-time">⏱️ ${recipe.prepTime}</span>
+			</div>
 		</div>
 	</div>
 </article>`;
