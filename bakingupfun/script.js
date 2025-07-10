@@ -78,7 +78,7 @@ function createProductCard(product) {
 }
 
 // Add to cart
-function addToCart(productId, buttonElement) {
+window.addToCart = function(productId, buttonElement) {
     const product = products.find(p => p.id === productId);
     if (!product) return;
     
@@ -98,7 +98,7 @@ function addToCart(productId, buttonElement) {
 }
 
 // Remove from cart
-function removeFromCart(productId) {
+window.removeFromCart = function(productId) {
     cart = cart.filter(item => item.id !== productId);
     updateCartDisplay();
     saveCartToStorage();
@@ -106,7 +106,7 @@ function removeFromCart(productId) {
 }
 
 // Update quantity
-function updateQuantity(productId, newQuantity) {
+window.updateQuantity = function(productId, newQuantity) {
     const item = cart.find(item => item.id === productId);
     if (item) {
         if (newQuantity <= 0) {
