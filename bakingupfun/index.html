@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Baking Up Fun, Home Baked Goods Made Fresh Everyday. Make an order">
+    <meta name="author" content="Dallin Georgeson">
+    <title>Baking Up Fun</title>
+    <link rel="icon" type="image/png" href="images/baking-up-fun.png">
+    
+    <!-- Social Media Meta Tags -->
+    <meta property="og:title" content="Baking Up Fun - Fresh Handcrafted Baked Goods">
+    <meta property="og:type" content="website">
+    <meta property="og:description" content="Bringing joy and sweetness through handcrafted, high-quality baked goods. Fresh breads, pastries, cakes, cookies, and seasonal specialties.">
+    <meta property="og:image" content="images/baking-up-fun.png">
+    <meta property="og:url" content="index.html">
+    <meta name="twitter:card" content="summary_large_image">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Merriweather:wght@300;400;700&family=Source+Sans+Pro:wght@400;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+    <script type="module" src="script.js"></script>
+</head>
+<body>
+    <header>
+        <nav>
+            <a href="index.html" class="logo-link">
+                <img src="images/baking-up-fun.png" alt="Baking Up Fun Logo" width="60" height="60">
+                <span class="logo-text">Baking Up Fun</span>
+            </a>
+            <ul class="nav-links">
+                <li><a href="index.html" aria-current="page">Home</a></li>
+                <li><a href="products.html">Our Products</a></li>
+                <li><a href="#" class="cart-link" aria-label="Shopping cart with 0 items">Cart (<span id="cart-count">0</span>)</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section class="hero">
+            <div class="hero-content">
+                <h1>Welcome to Baking Up Fun</h1>
+                <p>Bringing joy and sweetness through handcrafted, high-quality baked goods</p>
+                <a href="products.html" class="cta-button">Shop Our Products</a>
+            </div>
+        </section>
+
+        <section class="info-cards">
+            <div class="container">
+                <h2 class="sr-only">About Our Bakery</h2>
+                <div class="card-grid">
+                    <div class="info-card">
+                        <h3>About Us</h3>
+                        <p>At Baking Up Fun, we believe that every bite should bring a smile to your face. Our passionate bakers use only the finest ingredients to create fresh, delicious treats that bring families and communities together.</p>
+                    </div>
+                    <div class="info-card">
+                        <h3>Our Mission</h3>
+                        <p>To provide handcrafted, high-quality baked goods that bring joy and sweetness to customers. We're committed to creating memorable experiences through traditional recipes and innovative flavors.</p>
+                    </div>
+                    <div class="info-card clickable" onclick="window.location.href='products.html'" role="button" tabindex="0" aria-label="View our products page" onkeydown="if(event.key==='Enter'||event.key===' ')window.location.href='products.html'">
+                        <h3>Our Products</h3>
+                        <p>Discover our complete catalog of fresh baked goods including artisan breads, flaky pastries, custom cakes, homemade cookies, and seasonal specialties. Click to explore!</p>
+                        <span class="card-arrow" aria-hidden="true">→</span>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+
+
+        <section class="testimonials">
+            <div class="container">
+                <h2>What Our Customers Say</h2>
+                <div class="testimonial-grid">
+                    <div class="testimonial">
+                        <p>"The best croissants in town! Fresh, buttery, and absolutely delicious."</p>
+                        <cite>- Sarah M.</cite>
+                    </div>
+                    <div class="testimonial">
+                        <p>"Their custom cakes are works of art. Perfect for every special occasion!"</p>
+                        <cite>- Mike R.</cite>
+                    </div>
+                    <div class="testimonial">
+                        <p>"I stop by every morning for their fresh bread. It's become part of my daily routine."</p>
+                        <cite>- Emma L.</cite>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-hours">
+                    <h3>Hours</h3>
+                    <ul>
+                        <li>Monday - Friday: 6:00 AM - 5:00 PM</li>
+                        <li>Saturday: 7:00 AM - 5:00 PM</li>
+                        <li>Sunday: 8:00 AM - 5:00 PM</li>
+                    </ul>
+                </div>
+                <div class="footer-location">
+                    <h3>Location</h3>
+                    <p>123 Sweet Street<br>
+                    Bakery Town, BT 12345<br>
+                    Phone: (555) 123-BAKE</p>
+                </div>
+            </div>
+            <p class="attribution">Product photos from <a href="https://www.pexels.com" target="_blank" rel="noopener">Pexels</a></p>
+            <p class="copyright">&copy; 2025 Baking Up Fun. All rights reserved.</p>
+        </div>
+    </footer>
+
+</body>
+</html>
