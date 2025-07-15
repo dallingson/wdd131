@@ -121,11 +121,11 @@ nav {
 
 /* Fix deprecated API warning for h1 in sections */
 section h1 {
-    font-size: 3rem !important;
+    font-size: 3rem;
 }
 
 .hero-content h1 {
-    font-size: 3rem !important;
+    font-size: 3rem;
 }
 
 .hero-content p {
