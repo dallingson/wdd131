@@ -417,6 +417,23 @@ footer {
     text-decoration: underline;
 }
 
+.pexels-link {
+    color: var(--secondary-color) !important;
+    text-decoration: none !important;
+    font-weight: 600;
+    padding: 0.25rem 0.5rem;
+    border-radius: 3px;
+    transition: all 0.3s ease;
+    border: 1px solid transparent;
+}
+
+.pexels-link:hover {
+    background-color: var(--secondary-color);
+    color: var(--accent1-color) !important;
+    border-color: var(--secondary-color);
+    transform: translateY(-1px);
+}
+
 .sr-only {
     position: absolute;
     width: 1px;
